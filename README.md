@@ -22,7 +22,7 @@ julia prep.jl "yelp_academic_dataset_review.json" \
 Note that you'll need to add the Julia package [Umbrella](https://github.com/tbonza/Umbrella)
 to run the benchmark. Also note that the R benchmark may not finish depending the size.
 
+* C++: `make && time ./RegexBenchmark`
 * Julia: `time julia regex_benchmark.jl`
 * Python: `time python3 regex_benchmark.py`
 * R: `time Rscript regex_benchmark.R` 
-

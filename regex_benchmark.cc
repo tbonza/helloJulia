@@ -1,4 +1,5 @@
 #include <fstream>
+#include <iostream>
 #include <regex>
 #include <string>
 
@@ -19,6 +20,7 @@ int main(){
 
     std::string line;
     std::ifstream yelptext ("yelp_example.txt");
+    int count = 0;
     if (yelptext.is_open()){
         while (! yelptext.eof() ) {
             std::getline(yelptext, line);
@@ -27,6 +29,11 @@ int main(){
                 if (std::regex_match(line, patterns.at(i))){
                 }
             }
+
+            if (count % 10000 == 0){
+                std::cout << "Processed lines. " << count << std::endl;
+            }
+            count += 1;
         }
         yelptext.close();
     }
