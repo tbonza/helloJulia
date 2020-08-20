@@ -1,7 +1,5 @@
 import re
 
-
-
 if __name__ == "__main__":
 
     regexes = [re.compile(i) for i in open("yelp_example.regex","r").readlines()]

@@ -14,7 +14,7 @@ Run the preparation script to configure data for the Yelp Reviews regular expres
 
 ```
 julia prep.jl "yelp_academic_dataset_review.json" \
-    "yelp_example" --n 5000 --mock 1000
+    "yelp_example" --n 1000000 --mock 1000
 ```
 
 ## Regex Benchmark
