@@ -7,6 +7,8 @@ this code has only been run on Mac OSx. Your mileage may vary on Windows.
 git clone --recurse-submodules https://github.com/tbonza/helloJulia.git
 ```
 
+The Umbrella package can be accessed directly here: [https://github.com/tbonza/Umbrella](https://github.com/tbonza/Umbrella)
+
 ## Data Collection and Preprocessing
 
 Download and unzip the [Kaggle: Yelp Reviews Academic Dataset](https://www.kaggle.com/yelp-dataset/yelp-dataset/data?select=yelp_academic_dataset_review.json).
