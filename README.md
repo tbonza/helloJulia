@@ -28,3 +28,12 @@ to run the benchmark. Also note that the R benchmark may not finish depending th
 * Julia: `time julia regex_benchmark.jl`
 * Python: `time python3 regex_benchmark.py`
 * R: `time Rscript regex_benchmark.R` 
+
+## Parallel Regex Benchmark
+
+Currently, the Julia threads benchmark is running fastest on my laptop. Precompiling
+really helps!
+
+* Julia distributed: `julia -p 6 regex_distributed_benchmark.jl`
+* Julia threads: `julia --threads 6 regex_threads_benchmark.jl`
+* Python multiprocessing: `python3 regex_distributed_benchmark.py`
